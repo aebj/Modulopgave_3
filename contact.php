@@ -1,6 +1,5 @@
 <?php
 
-include "connection.php";
 include "functions.php";
 
 ?>
@@ -12,6 +11,10 @@ include "functions.php";
     <title></title>
   </head>
   <body>
+
+    <div class="">
+      <?php debug(employee_data()) ?>
+    </div>
 
   </body>
 </html>

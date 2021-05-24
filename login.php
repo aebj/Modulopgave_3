@@ -1,6 +1,5 @@
 <?php
 
-include "connection.php";
 include "functions.php";
 
 if(isset($_POST['login_button'])){
