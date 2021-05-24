@@ -1,13 +1,14 @@
-<?php
-// Difinerer konstanter med database forbindelse info
-define('DBHOST', 'localhost');
-define('DBUSER', 'root');
-define('DBPASS', 'root');
-define('DBNAME', 'aros_and_son');
+<?php 
 
-// Inkluderer functions.php med alle funktioner
-include('functions.php');
-
-// Forbinder til databasen (se functions.php)
-connect();
 ?>
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  </body>
+</html>
