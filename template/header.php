@@ -5,6 +5,6 @@
   <div class="header-right">
     <a href="communication.php">Beskeder</a>
     <a href="contact.php">Kontakter</a>
-    <a href="deals.php">Aftaler</a>
+    <a class="active" href="deals.php">Aftaler</a>
   </div>
 </div>

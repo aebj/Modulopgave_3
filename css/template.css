@@ -5,7 +5,7 @@
 }
 
 header a {
-  float: left;
+
   color: black;
   text-align: center;
   padding: 15px;
@@ -30,7 +30,7 @@ header a.active {
   color: white;
 }
 header-right {
-  float:right;
+  float: right;
 }
 
 @media screen and (max-width: 500px) {
