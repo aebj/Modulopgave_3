@@ -20,7 +20,11 @@ if(!$conn) {
 
 function employee_data() {
   global $conn;
-  $sql = "SELECT first_name, last_name, email, phone_no, address, zip_code FROM employees";
+  $sql = "SELECT employees.first_name, employees.last_name, employees.email, employees.phone_no, employees.address, zip_codes.zip_code, zip_codes.city
+  FROM employees
+  LEFT JOIN zip_codes
+  ON employees.zip_code = zip_codes.zip_code
+  ORDER BY employees.first_name";
   $result = mysqli_query($conn, $sql);
   if (mysqli_num_rows($result) > 0) {
     while ($row = mysqli_fetch_assoc($result)) {
@@ -31,7 +35,29 @@ function employee_data() {
   else {
     echo "0 result";
   }
+}
 
+function costumer_data() {
+  global $conn;
+  $sql = "SELECT costumers.company_name, costumers.cvr_no, costumers.address, zip_codes.zip_code, zip_codes.city, costumer_contacts.first_name, costumer_contacts.last_name, costumer_contacts.email, costumer_contacts.phone_no
+  FROM costumers
+  JOIN zip_codes
+  ON zip_codes.zip_code = costumers.zip_code
+  JOIN deals_costumers_employees_costumer_contacts
+  ON costumers.id = deals_costumers_employees_costumer_contacts.costumers_id
+  JOIN costumer_contacts
+  ON costumer_contacts.id = deals_costumers_employees_costumer_contacts.costumer_contacts_id
+  ORDER BY costumers.company_name";
+  $result = mysqli_query($conn, $sql);
+  if (mysqli_num_rows($result) > 0) {
+    while ($row = mysqli_fetch_assoc($result)) {
+      echo "<tr><td>". $row["company_name"] ."</td><td>". $row["cvr_no"] ."</td><td>". $row["address"] ."</td><td>". $row["zip_code"] ."</td><td>". $row["city"] ."</td><td>". $row["first_name"] ."</td><td>". $row["last_name"] ."</td><td>". $row["email"] ."</td><td>". $row["phone_no"] ."</td></tr>";
+    }
+    echo "</table>";
+  }
+  else {
+    echo "0 result";
+  }
 }
 
 // Debug funktion (sindssygt god at have i alle projekter)
