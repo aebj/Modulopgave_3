@@ -14,12 +14,15 @@ include('functions.php');
 
     <table>
       <tr>
+        <th>Company name</th>
+        <th>CVR number</th>
+        <th>Address</th>
+        <th>Zip code</th>
+        <th>City</th>
         <th>First name</th>
         <th>Last name</th>
         <th>Email</th>
         <th>Phone number</th>
-        <th>Address</th>
-        <th>Zip code</th>
       </tr>
       <?php customer_data() ?>
 

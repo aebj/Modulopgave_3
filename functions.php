@@ -28,7 +28,14 @@ function employee_data() {
   $result = mysqli_query($conn, $sql);
   if (mysqli_num_rows($result) > 0) {
     while ($row = mysqli_fetch_assoc($result)) {
-      echo "<tr><td>". $row["first_name"] ."</td><td>". $row["last_name"] ."</td><td>". $row["email"] ."</td><td>". $row["phone_no"] ."</td><td>". $row["address"] ."</td><td>". $row["zip_code"] ."</td></tr>";
+      echo "<tr>
+      <td>". $row["first_name"] ."</td>
+      <td>". $row["last_name"] ."</td>
+      <td>". $row["email"] ."</td>
+      <td>". $row["phone_no"] ."</td>
+      <td>". $row["address"] ."</td>
+      <td>". $row["zip_code"] ."</td>
+      </tr>";
     }
     echo "</table>";
   }
@@ -37,7 +44,7 @@ function employee_data() {
   }
 }
 
-function costumer_data() {
+function customer_data() {
   global $conn;
   $sql = "SELECT costumers.company_name, costumers.cvr_no, costumers.address, zip_codes.zip_code, zip_codes.city, costumer_contacts.first_name, costumer_contacts.last_name, costumer_contacts.email, costumer_contacts.phone_no
   FROM costumers
@@ -51,7 +58,17 @@ function costumer_data() {
   $result = mysqli_query($conn, $sql);
   if (mysqli_num_rows($result) > 0) {
     while ($row = mysqli_fetch_assoc($result)) {
-      echo "<tr><td>". $row["company_name"] ."</td><td>". $row["cvr_no"] ."</td><td>". $row["address"] ."</td><td>". $row["zip_code"] ."</td><td>". $row["city"] ."</td><td>". $row["first_name"] ."</td><td>". $row["last_name"] ."</td><td>". $row["email"] ."</td><td>". $row["phone_no"] ."</td></tr>";
+      echo "<tr>
+      <td>". $row["company_name"] ."</td>
+      <td>". $row["cvr_no"] ."</td>
+      <td>". $row["address"] ."</td>
+      <td>". $row["zip_code"] ."</td>
+      <td>". $row["city"] ."</td>
+      <td>". $row["first_name"] ."</td>
+      <td>". $row["last_name"] ."</td>
+      <td>". $row["email"] ."</td>
+      <td>". $row["phone_no"] ."</td>
+      </tr>";
     }
     echo "</table>";
   }
