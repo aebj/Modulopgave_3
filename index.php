@@ -1,6 +1,6 @@
 <?php
 
-include "functions.php";
+include('functions.php');
 
 header("Location: login.php")
 ?>
