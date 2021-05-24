@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="css/template.css">
+
 <div class="header">
   <a href="#default" class="logo">Aros&søn</a>
   <div class="header-right">
