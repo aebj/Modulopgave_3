@@ -1,10 +1,10 @@
 <link rel="stylesheet" href="css/template.css">
 
 <div class="header">
-  <a href="#default" class="logo">Aros&søn</a>
+  <a class="logo" href="deals.php" >Aros & søn</a>
   <div class="header-right">
-    <a class="active" href="#communication">Beskeder</a>
-    <a href="#contact">Kontakter</a>
-    <a href="#deals">Aftaler</a>
+    <a href="communication.php">Beskeder</a>
+    <a href="contact.php">Kontakter</a>
+    <a href="deals.php">Aftaler</a>
   </div>
 </div>
