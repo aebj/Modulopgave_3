@@ -1,5 +1,9 @@
-<?php 
+<?php
 
+include "connection.php";
+include "functions.php";
+
+header("Location: login.php")
 ?>
 
 <!DOCTYPE html>

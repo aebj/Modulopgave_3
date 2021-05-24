@@ -1,8 +1,9 @@
 <?php
 
 include "connection.php";
+include "functions.php";
 
-if(isset($_POST['but_submit'])){
+if(isset($_POST['login_button'])){
 
     $username = mysqli_real_escape_string($conn, $_POST['username']);
     $password = mysqli_real_escape_string($conn, $_POST['password']);
@@ -16,8 +17,9 @@ if(isset($_POST['but_submit'])){
         if($result && mysqli_num_rows($result) > 0){
             $_SESSION['username'] = $username;
             header('Location: deals.php');
+            exit();
         }else{
-            echo "Invalid username and password";
+            echo "Invalid username and password"; //Skal skrives på dansk
         }
 
     }
@@ -46,7 +48,7 @@ if(isset($_POST['but_submit'])){
                 <input type="password" name="password" value="" placeholder="Password">
             </div>
             <div>
-                <input type="submit" value="Login" name="but_submit">
+                <input type="submit" value="Login" name="login_button">
             </div>
         </div>
     </form>

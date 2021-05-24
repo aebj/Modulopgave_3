@@ -10,5 +10,5 @@ $conn = mysqli_connect(DBHOST, DBUSER, DBPASS, DBNAME);
 
 // Tester om der er fejl i databaseforbindelse (Stopper eksekvering)
 if(!$conn) {
-  die("Connection failed" . mysqli_error($conn));
+  die("Connection failed" . mysqli_error($conn)); //String skal skrives på dansk
 }
