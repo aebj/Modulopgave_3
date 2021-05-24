@@ -21,7 +21,7 @@ include('functions.php');
         <th>Address</th>
         <th>Zip code</th>
       </tr>
-      <?php  ?>
+      <?php customer_data() ?>
 
 
   </body>
