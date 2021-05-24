@@ -13,7 +13,7 @@ include "functions.php";
   <body>
 
     <div class="">
-      <?php debug(employee_data()) ?>
+      <?php debug($employee_information) ?>
     </div>
 
   </body>

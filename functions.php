@@ -28,8 +28,8 @@ function employee_data() {
       $employee_data[] = $row;
     }
   }
-  foreach ($employee_data as $employee_information) {
-    echo $employee_data;
+  foreach ($employee_data[0] as $employee_information) {
+    echo $employee_information;
   }
 }
 
