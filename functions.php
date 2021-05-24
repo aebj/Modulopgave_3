@@ -22,17 +22,17 @@ function employee_data() {
   global $conn;
   $sql = "SELECT first_name, last_name, email, phone_no, address, zip_code FROM employees";
   $result = mysqli_query($conn, $sql);
-  $employee_data = array();
   if (mysqli_num_rows($result) > 0) {
     while ($row = mysqli_fetch_assoc($result)) {
-      $employee_data[] = $row;
+      echo "<tr><td>". $row["first_name"] ."</td><td>". $row["last_name"] ."</td><td>". $row["email"] ."</td><td>". $row["phone_no"] ."</td><td>". $row["address"] ."</td><td>". $row["zip_code"] ."</td></tr>";
     }
+    echo "</table>";
   }
-  foreach ($employee_data[0] as $employee_information) {
-    echo $employee_information;
+  else {
+    echo "0 result";
   }
-}
 
+}
 
 // Debug funktion (sindssygt god at have i alle projekter)
 // En funktion til at hente data fra en variable og opstiller det pænt
@@ -41,3 +41,23 @@ function debug($data) {
   print_r($data);
   echo '</pre>';
 }
+
+
+
+// EXTRA CODE
+
+/*
+function employee_data() {
+  global $conn;
+  $sql = "SELECT first_name, last_name, email, phone_no, address, zip_code FROM employees";
+  $result = mysqli_query($conn, $sql);
+  $employee_data = array();
+  if (mysqli_num_rows($result) > 0) {
+    while ($row = mysqli_fetch_assoc($result)) {
+      $employee_data[] = $row;
+    }
+  }
+
+    foreach ($employee_data as $employee_information) {
+      echo $employee_information['first_name']." ".$employee_information['last_name']." ".$employee_information['email']." ".$employee_information['phone_no']." ".$employee_information['address']." ".$employee_information['zip_code']." "."<hr>";
+  } */

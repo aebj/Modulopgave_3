@@ -8,13 +8,20 @@ include('functions.php');
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Contacts</title>
   </head>
   <body>
 
-    <div class="">
-      <?php debug($employee_information) ?>
-    </div>
+    <table>
+      <tr>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Email</th>
+        <th>Phone number</th>
+        <th>Address</th>
+        <th>Zip code</th>
+      </tr>
+      <?php employee_data() ?>
 
   </body>
 </html>
