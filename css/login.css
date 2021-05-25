@@ -7,7 +7,7 @@ h1 {
 }
 
 form {
-  background-color: #ebd234;
+  background-color: deeppink; /*#ebd234*/
   text-align: center;
   top: 50%;
   display: grid;
