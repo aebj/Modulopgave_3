@@ -20,20 +20,15 @@ include('functions.php');
   </head>
   <body>
 
-      <div class="centralised">
-      <div class="chathistory"></div>
-      <div class="chatbox">
+    <table>
+      <tr>
+        <th>Opslagstavle</th>
+      </tr>
+      <?php message_data();  ?>
+    <form class="" action="insert.php" method="post">
+      <label for=""></label><input type="text" name="message" value=""><br>
+      <button type="submit" name="message_button">Send</button>
+    </form>
 
-          <form action="" method="post">
-
-              <textarea class="textarea" id="message" name="message"></textarea>
-
-        </forum>
-
-    </div>
-    </div>
-
-    <input type="text" name="note" value="">
-    <button type="submit">Send</button>
   </body>
 </html>

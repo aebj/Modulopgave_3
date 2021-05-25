@@ -92,6 +92,40 @@ function deals_data() {
   }
 }
 
+function message_data() {
+  global $conn;
+  $sql = "SELECT message, created_at FROM messages_created_at";
+
+  $result = mysqli_query($conn, $sql);
+  if (mysqli_num_rows($result) > 0) {
+    while ($row = mysqli_fetch_assoc($result)) {
+      echo "<tr>
+      <td>[". $row["created_at"] . "] " . $row["message"] ."</td>
+      </tr>";
+    }
+    echo "</table>";
+  }
+  else {
+    echo "0 result";
+  }
+}
+
+function insert_message() {
+  global $conn;
+  if (isset($_POST['message_button'])) {
+    if (!empty($_POST['message'])) {
+
+      $message = $_POST['message'];
+
+      $sql_query = "INSERT INTO `messages_created_at` (`id`, `message`, `created_at`) VALUES (NULL, '$message', CURRENT_TIMESTAMP)";
+      $run = mysqli_query($conn, $sql_query) or die();
+    }
+    else {
+      echo "Kan ikke være tom";
+    }
+  }
+}
+
 // Debug funktion (sindssygt god at have i alle projekter)
 // En funktion til at hente data fra en variable og opstiller det pænt
 function debug($data) {
