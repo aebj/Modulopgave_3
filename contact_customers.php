@@ -1,5 +1,6 @@
 <?php
 
+include('template/header.php');
 include('functions.php');
 
 ?>
@@ -25,7 +26,6 @@ include('functions.php');
         <th>Phone number</th>
       </tr>
       <?php customer_data() ?>
-
 
   </body>
 </html>

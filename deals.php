@@ -1,7 +1,8 @@
 <?php
 
-include('functions.php');
 include('template/header.php');
+include('functions.php');
+
 ?>
 
 <!DOCTYPE html>
