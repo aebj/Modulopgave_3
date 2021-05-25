@@ -20,17 +20,17 @@ if(!$conn) {
 
 function employee_data() {
   global $conn;
-  $sql = "SELECT * FROM contact_employees";
+  $sql = "SELECT * FROM employees_overview";
   $result = mysqli_query($conn, $sql);
   if (mysqli_num_rows($result) > 0) {
     while ($row = mysqli_fetch_assoc($result)) {
       echo "<tr>
-      <td>". $row["first_name"] ."</td>
-      <td>". $row["last_name"] ."</td>
+      <td>". $row["employee_first_name"] ."</td>
+      <td>". $row["employee_last_name"] ."</td>
       <td>". $row["role"] ."</td>
-      <td>". $row["email"] ."</td>
-      <td>". $row["phone_no"] ."</td>
-      <td>". $row["address"] ."</td>
+      <td>". $row["employee_email"] ."</td>
+      <td>". $row["employee_phone_no"] ."</td>
+      <td>". $row["employee_address"] ."</td>
       <td>". $row["zip_code"] ."</td>
       <td>". $row["city"] ."</td>
       </tr>";
@@ -44,20 +44,20 @@ function employee_data() {
 
 function customer_data() {
   global $conn;
-  $sql = "SELECT * FROM contact_costumers";
+  $sql = "SELECT * FROM costumers_overview";
   $result = mysqli_query($conn, $sql);
   if (mysqli_num_rows($result) > 0) {
     while ($row = mysqli_fetch_assoc($result)) {
       echo "<tr>
       <td>". $row["company_name"] ."</td>
       <td>". $row["cvr_no"] ."</td>
-      <td>". $row["address"] ."</td>
+      <td>". $row["costumer_address"] ."</td>
       <td>". $row["zip_code"] ."</td>
       <td>". $row["city"] ."</td>
-      <td>". $row["first_name"] ."</td>
-      <td>". $row["last_name"] ."</td>
-      <td>". $row["email"] ."</td>
-      <td>". $row["phone_no"] ."</td>
+      <td>". $row["costumer_contact_first_name"] ."</td>
+      <td>". $row["costumer_contact_last_name"] ."</td>
+      <td>". $row["costumer_contact_email"] ."</td>
+      <td>". $row["costumer_contact_phone_no"] ."</td>
       </tr>";
     }
     echo "</table>";
@@ -69,15 +69,16 @@ function customer_data() {
 
 function deals_data() {
   global $conn;
-  $sql = "SELECT * FROM deals";
+  $sql = "SELECT * FROM deals_overview";
+
   $result = mysqli_query($conn, $sql);
   if (mysqli_num_rows($result) > 0) {
     while ($row = mysqli_fetch_assoc($result)) {
       echo "<tr>
-      <td>". $row["deals.id"] ."</td>
+      <td>". $row["id"] ."</td>
       <td>". $row["company_name"] ."</td>
-      <td>". $row["costumer_contacts.first_name"] . " " . $row["costumer_contacts.last_name"] ."</td>
-      <td>". $row["employees.first_name"] . " " . $row["employees.last_name"] ."</td>
+      <td>". $row["costumer_contact_first_name"] . " " . $row["costumer_contact_last_name"] ."</td>
+      <td>". $row["employee_first_name"] . " " . $row["employee_last_name"] ."</td>
       <td>". $row["stage"] ."</td>
       <td>". $row["priority"] ."</td>
       <td>". $row["expected_due_date"] ."</td>

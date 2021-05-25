@@ -31,3 +31,12 @@ include('functions.php');
 
   </body>
 </html>
+<!--SELECT costumers.company_name, costumers.cvr_no, costumers.costumer_address, zip_codes.zip_code, zip_codes.city, costumer_contacts.costumer_contact_first_name, costumer_contacts.costumer_contact_last_name, costumer_contacts.costumer_contact_email, costumer_contacts.costumer_contact_phone_no
+FROM costumers
+JOIN deals_costumers_employees_costumer_contacts
+ON deals_costumers_employees_costumer_contacts.costumers_id = costumers.id
+JOIN costumer_contacts
+ON costumer_contacts.id = deals_costumers_employees_costumer_contacts.costumer_contacts_id
+JOIN zip_codes
+ON costumers.zip_code = zip_codes.zip_code
+ORDER BY costumers.company_name

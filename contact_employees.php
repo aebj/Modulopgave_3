@@ -30,3 +30,12 @@ include('functions.php');
 
   </body>
 </html>
+<!--SELECT employees.employee_first_name, employees.employee_last_name, roles.role, employees.employee_email, employees.employee_phone_no, employees.employee_address, zip_codes.zip_code, zip_codes.city
+FROM employees
+JOIN employees_roles
+ON employees.id = employees_roles.employee_id
+JOIN roles
+ON roles.id = employees_roles.role_id
+JOIN zip_codes
+ON employees.zip_code = zip_codes.zip_code
+ORDER BY employees.employee_first_name
