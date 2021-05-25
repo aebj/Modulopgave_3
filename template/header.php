@@ -29,6 +29,5 @@ if ( isset( $_SESSION['username'] ) ) {
         <a href="communication.php">Beskeder</a>
       </div>
     </div>
-
   </body>
 </html>

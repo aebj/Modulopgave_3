@@ -27,7 +27,7 @@
 
 .header a.active {
   background-color;
-  color: white;
+  color: black;
 }
 .header-right {
   float: right;
@@ -39,7 +39,7 @@
     display: block;
     text-align:left;
   }
-  header-right {
+  .header-right {
     float: none;
   }
 }
