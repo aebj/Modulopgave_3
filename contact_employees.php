@@ -17,12 +17,14 @@ include('functions.php');
     <a href="contact_employees.php"><button type="button" name="button">Employees</button></a>
     <table>
       <tr>
-        <th>First name</th>
-        <th>Last name</th>
+        <th>Fornavn</th>
+        <th>Efternavn</th>
+        <th>Rolle</th>
         <th>Email</th>
-        <th>Phone number</th>
-        <th>Address</th>
-        <th>Zip code</th>
+        <th>Telefonnummer</th>
+        <th>Adresse</th>
+        <th>Postnummer</th>
+        <th>By</th>
       </tr>
       <?php employee_data() ?>
 
