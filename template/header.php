@@ -24,9 +24,9 @@ if ( isset( $_SESSION['username'] ) ) {
       <a class="logo" href="deals.php" >Aros & søn</a>
       <div class="header-right">
         <a href="logout.php">Log ud</a>
-        <a class="active" href="deals.php">Aftaler</a>
-        <a href="contact_customers.php">Kontakter</a>
-        <a href="communication.php">Beskeder</a>
+        <a href="deals.php"><button type="button" name "button">Aftaler</a>
+        <a href="contact_customers.php"><button type="button" name "button">Kontakter</a>
+        <a href="communication.php"><button type="button" name "button">Beskeder</a>
       </div>
     </div>
   </body>
