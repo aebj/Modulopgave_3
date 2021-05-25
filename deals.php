@@ -1,17 +1,8 @@
 <?php
 
-session_start();
-
-if ( isset( $_SESSION['username'] ) ) {
-    // Grab user data from the database using the user_id
-    // Let them access the "logged in only" pages
-} else {
-    // Redirect them to the login page
-    header("Location: login.php");
-}
-
-include('functions.php');
 include('template/header.php');
+include('functions.php');
+
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +12,6 @@ include('template/header.php');
     <title></title>
   </head>
   <body>
-    <h1>Hello <?php echo $_SESSION['username'] ?> </h1>
 
   </body>
 </html>
