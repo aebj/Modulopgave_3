@@ -2,7 +2,7 @@
 
 session_start();
 
-if ( isset( $_SESSION['username'] ) ) {
+if ( isset( $_SESSION['email'] ) ) {
     // Grab user data from the database using the user_id
     // Let them access the "logged in only" pages
 } else {

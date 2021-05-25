@@ -5,9 +5,16 @@ session_start();
 // Slutter sessionen med at tømme $_SESSION variablen
 
 session_destroy();
+?>
 
-echo 'You have logged out';
+<html>
+<link rel="stylesheet" href="css/login.css">
+<div class="logout">
+<h3><?php echo 'Du er blevet logget ud'; ?></h3>
+</div>
 
-header('Refresh: 3; URL = login.php');
+<?php
+
+header('Refresh: 7; URL = login.php');
 
 ?>
