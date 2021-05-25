@@ -20,7 +20,7 @@ if(isset($_POST['login_button'])){
             header('Location: deals.php');
             exit();
         }else{
-            echo "Invalid username and password"; //Skal skrives på dansk
+            echo "Fejl i E-mail eller adgangskode"; //Skal skrives på dansk
         }
 
     }
