@@ -44,6 +44,8 @@ include('functions.php');
   </option>
   <?php } ?>
 </select><br><br>
+
+
 <!-- JOIN til deals
 SELECT deals.id, costumers.company_name, costumer_contacts.costumer_contact_first_name, costumer_contacts.costumer_contact_last_name, employees.employee_first_name, employees.employee_last_name, stages.stage, proritys.priority, deals.expected_due_date, deals.deadline
 FROM deals

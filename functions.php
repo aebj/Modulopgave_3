@@ -138,6 +138,15 @@ function debug($data) {
 
 // EXTRA CODE
 
+/* possible join selecter for "opslagstavle"
+SELECT messages_created_at.message, messages_created_at.created_at, employees.employee_first_name, employees.employee_last_name
+FROM messages_created_at
+JOIN communications_messages_created_at_id
+ON messages_created_at.id = communications_messages_created_at_id.messages_created_at_id
+JOIN employees
+ON employees.id = communications_messages_created_at_id.communications_id
+
+
 /*
 function employee_data() {
   global $conn;
