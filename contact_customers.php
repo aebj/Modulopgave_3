@@ -13,6 +13,8 @@ include('functions.php');
   </head>
   <body>
 
+    <a href="contact_customers.php"><button type="button" name="button">Customers</button></a>
+    <a href="contact_employees.php"><button type="button" name="button">Employees</button></a>
     <table>
       <tr>
         <th>Company name</th>

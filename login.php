@@ -11,7 +11,7 @@ if(isset($_POST['login_button'])){
 
     if ($username != "" && $password != ""){
 
-        $sql_query = "SELECT id, email, password, first_name, last_name FROM employees WHERE email='".$username."'AND password='".$password."'LIMIT 1";
+        $sql_query = "SELECT id, email, password FROM employees WHERE email='".$username."'AND password='".$password."'LIMIT 1";
         $result = mysqli_query($conn,$sql_query);
         $row = mysqli_fetch_array($result);
 
