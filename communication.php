@@ -21,7 +21,7 @@ include('functions.php');
 
           <form action="" method="post">
 
-              <textarea class="txtarea" id="message" name="message"></textarea>
+              <textarea class="textarea" id="message" name="message"></textarea>
 
         </forum>
 
