@@ -1,7 +1,12 @@
 <?php
 
+
 include('template/header.php');
 include('functions.php');
+
+
+//$sql="SELECT * FROM `messages created_at`";
+//$query = mysqli_query($conn,$sql);
 
 ?>
 
@@ -28,9 +33,7 @@ include('functions.php');
     </div>
     </div>
 
-
+    <input type="text" name="note" value="">
+    <button type="submit">Send</button>
   </body>
 </html>
-
-<input type="text" name="note" value="">
-<button type="submit">Send</button>
