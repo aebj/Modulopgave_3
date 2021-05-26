@@ -14,12 +14,12 @@ include('functions.php');
   </head>
   <body>
 
-    <a class=button href="contact_customers.php"><button type="button" name="button">Customers</button></a>
-    <a class=button href="contact_employees.php"><button type="button" name="button">Employees</button></a>
+    <a class=button href="contact_customers.php"><button type="button" name="button">Kunder</button></a>
+    <a class=button href="contact_employees.php"><button type="button" name="button">Medarbejdere</button></a>
     <table>
       <tr>
         <th>Virksomhed<hr></th>
-        <th>CVR<hr></th>
+        <th>CVR-nummer<hr></th>
         <th>Adresse<hr></th>
         <th>Postnummer<hr></th>
         <th>By<hr></th>
@@ -32,7 +32,9 @@ include('functions.php');
     </table>
   </body>
 </html>
-<!--SELECT costumers.company_name, costumers.cvr_no, costumers.costumer_address, zip_codes.zip_code, zip_codes.city, costumer_contacts.costumer_contact_first_name, costumer_contacts.costumer_contact_last_name, costumer_contacts.costumer_contact_email, costumer_contacts.costumer_contact_phone_no
+
+<!-- JOIN
+SELECT costumers.company_name, costumers.cvr_no, costumers.costumer_address, zip_codes.zip_code, zip_codes.city, costumer_contacts.costumer_contact_first_name, costumer_contacts.costumer_contact_last_name, costumer_contacts.costumer_contact_email, costumer_contacts.costumer_contact_phone_no
 FROM costumers
 JOIN deals_costumers_employees_costumer_contacts
 ON deals_costumers_employees_costumer_contacts.costumers_id = costumers.id

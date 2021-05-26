@@ -14,13 +14,13 @@ include('functions.php');
   </head>
   <body>
 
-    <a class=button href="contact_customers.php"><button type="button" name="button">Customers</button></a>
-    <a class=button href="contact_employees.php"><button type="button" name="button">Employees</button></a>
+    <a class=button href="contact_customers.php"><button type="button" name="button">Kunder</button></a>
+    <a class=button href="contact_employees.php"><button type="button" name="button">Medarbejdere</button></a>
     <table>
       <tr>
         <th>Fornavn<hr></th>
         <th>Efternavn<hr></th>
-        <th>Rolle<hr></th>
+        <th>Stilling<hr></th>
         <th>Email<hr></th>
         <th>Telefonnummer<hr></th>
         <th>Adresse<hr></th>
@@ -31,7 +31,9 @@ include('functions.php');
     </table>
   </body>
 </html>
-<!--SELECT employees.employee_first_name, employees.employee_last_name, roles.role, employees.employee_email, employees.employee_phone_no, employees.employee_address, zip_codes.zip_code, zip_codes.city
+
+<!-- JOIN
+SELECT employees.employee_first_name, employees.employee_last_name, roles.role, employees.employee_email, employees.employee_phone_no, employees.employee_address, zip_codes.zip_code, zip_codes.city
 FROM employees
 JOIN employees_roles
 ON employees.id = employees_roles.employee_id
