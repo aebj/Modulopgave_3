@@ -15,13 +15,13 @@ include('functions.php');
   <body>
     <table>
       <tr>
-        <th>Deal number<hr></th>
-        <th>Company name<hr></th>
-        <th>Campany contact<hr></th>
-        <th>Managed By<hr></th>
-        <th>Stage<hr></th>
-        <th>Priority<hr></th>
-        <th>Expected due date<hr></th>
+        <th>Aftaler<hr></th>
+        <th>Virksomhed<hr></th>
+        <th>Kontakt person<hr></th>
+        <th>Administreret af<hr></th>
+        <th>Fremskridt<hr></th>
+        <th>Prioritet<hr></th>
+        <th>Forventet forfaldsdag<hr></th>
         <th>Deadline<hr></th>
       </tr>
       <?php deals_data() ?>

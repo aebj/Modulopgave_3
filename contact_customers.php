@@ -18,15 +18,15 @@ include('functions.php');
     <a href="contact_employees.php"><button type="button" name="button">Employees</button></a>
     <table>
       <tr>
-        <th>Company name</th>
+        <th>Virksomhed</th>
         <th>CVR number</th>
-        <th>Address</th>
-        <th>Zip code</th>
-        <th>City</th>
-        <th>First name</th>
-        <th>Last name</th>
+        <th>Adresse</th>
+        <th>Postnummer</th>
+        <th>By</th>
+        <th>Fornavn</th>
+        <th>Efternavn</th>
         <th>Email</th>
-        <th>Phone number</th>
+        <th>Telefonnummer</th>
       </tr>
       <?php customer_data() ?>
 
