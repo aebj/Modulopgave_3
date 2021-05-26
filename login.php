@@ -33,7 +33,7 @@ if(isset($_POST['login_button'])){
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/login.css">
-    <title></title>
+    <title>Login</title>
   </head>
   <body>
 

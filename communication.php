@@ -16,7 +16,7 @@ include('functions.php');
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>communication</title>
+    <title>Communication</title>
   </head>
   <body>
 
@@ -26,7 +26,7 @@ include('functions.php');
       </tr>
       <?php message_data();  ?>
     <form class="" action="insert.php" method="post">
-      <label for=""></label><input type="text" name="message" value=""><br>
+      <input type="text" name="message" value="">
       <button type="submit" name="message_button">Send</button>
     </form>
 
