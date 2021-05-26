@@ -10,19 +10,19 @@ include('functions.php');
 
 ?>
 
-<link rel="stylesheet" href="css/communication.css">
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Communication</title>
+    <link rel="stylesheet" href="css/communication.css">
+    <title>Beskeder</title>
   </head>
   <body>
 
     <table>
       <tr>
-        <th>Opslagstavle</th>
+        <th>Beskeder</th>
       </tr>
       <?php message_data();  ?>
     <form class="" action="insert.php" method="post">

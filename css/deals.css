@@ -1,0 +1,7 @@
+table {
+  display: grid;
+}
+
+th {
+  padding: 20px;
+}

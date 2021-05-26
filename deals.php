@@ -9,19 +9,20 @@ include('functions.php');
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/deals.css">
     <title>Aftaler</title>
   </head>
   <body>
     <table>
       <tr>
-        <th>Deal number</th>
-        <th>Company name</th>
-        <th>Campany contact</th>
-        <th>Managed By</th>
-        <th>Stage</th>
-        <th>Priority</th>
-        <th>Expected due date</th>
-        <th>Deadline</th>
+        <th>Deal number<hr></th>
+        <th>Company name<hr></th>
+        <th>Campany contact<hr></th>
+        <th>Managed By<hr></th>
+        <th>Stage<hr></th>
+        <th>Priority<hr></th>
+        <th>Expected due date<hr></th>
+        <th>Deadline<hr></th>
       </tr>
       <?php deals_data() ?>
   </body>

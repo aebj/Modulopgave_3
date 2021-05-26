@@ -9,7 +9,8 @@ include('functions.php');
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Customers</title>
+    <link rel="stylesheet" href="css/contacts.css">
+    <title>Kunder</title>
   </head>
   <body>
 
