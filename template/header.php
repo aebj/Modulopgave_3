@@ -16,7 +16,7 @@ if ( isset( $_SESSION['email'] ) ) {
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/template.css">
+    <link rel="stylesheet" href="css/header.css">
     <title></title>
   </head>
   <body>

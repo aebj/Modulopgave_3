@@ -1,4 +1,8 @@
 html {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+html {
   background-color: #23272a;
 }
 
@@ -7,7 +11,7 @@ h1 {
 }
 
 form {
-  background-color: deeppink; /*#ebd234*/
+  background-color: #ebd234;
   text-align: center;
   top: 50%;
   display: grid;

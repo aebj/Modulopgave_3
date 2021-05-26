@@ -13,7 +13,7 @@ include('functions.php');
     <title>Aftaler</title>
   </head>
   <body>
-    <table>
+    <table class=deals_table>
       <tr>
         <th>Aftaler<hr></th>
         <th>Virksomhed<hr></th>
@@ -25,26 +25,9 @@ include('functions.php');
         <th>Deadline<hr></th>
       </tr>
       <?php deals_data() ?>
+    </table>
   </body>
 </html>
-
-<label for="type_id">Type:</label><br>
-<select id="type_id" name="type_id">
-  <?php foreach(select_type() as $type) { ?>
-  <option value="<?php echo $type['id']; ?>">
-    <?php echo $type['type']; ?>
-  </option>
-  <?php } ?>
-</select><br><br>
-
-<label for="priority">Priority:</label><br>
-<select id="priority" name="priority">
-  <?php foreach(select_type() as $type) { ?>
-  <option value="<?php echo $priority['id']; ?>">
-    <?php echo $priority['priority']; ?>
-  </option>
-  <?php } ?>
-</select><br><br>
 
 
 <!-- JOIN til deals

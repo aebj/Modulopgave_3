@@ -9,27 +9,27 @@ include('functions.php');
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="css/contact.css">
     <title>Kunder</title>
   </head>
   <body>
 
-    <a href="contact_customers.php"><button type="button" name="button">Customers</button></a>
-    <a href="contact_employees.php"><button type="button" name="button">Employees</button></a>
+    <a class=button href="contact_customers.php"><button type="button" name="button">Customers</button></a>
+    <a class=button href="contact_employees.php"><button type="button" name="button">Employees</button></a>
     <table>
       <tr>
-        <th>Virksomhed</th>
-        <th>CVR number</th>
-        <th>Adresse</th>
-        <th>Postnummer</th>
-        <th>By</th>
-        <th>Fornavn</th>
-        <th>Efternavn</th>
-        <th>Email</th>
-        <th>Telefonnummer</th>
+        <th>Virksomhed<hr></th>
+        <th>CVR<hr></th>
+        <th>Adresse<hr></th>
+        <th>Postnummer<hr></th>
+        <th>By<hr></th>
+        <th>Fornavn<hr></th>
+        <th>Efternavn<hr></th>
+        <th>Email<hr></th>
+        <th>Telefonnummer<hr></th>
       </tr>
       <?php customer_data() ?>
-
+    </table>
   </body>
 </html>
 <!--SELECT costumers.company_name, costumers.cvr_no, costumers.costumer_address, zip_codes.zip_code, zip_codes.city, costumer_contacts.costumer_contact_first_name, costumer_contacts.costumer_contact_last_name, costumer_contacts.costumer_contact_email, costumer_contacts.costumer_contact_phone_no

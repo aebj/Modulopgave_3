@@ -10,7 +10,7 @@ session_destroy();
 <html>
 <link rel="stylesheet" href="css/login.css">
 <div class="logout">
-<h3><?php echo 'Du er blevet logget ud'; ?></h3>
+  <h3><?php echo 'Du er blevet logget ud'; ?></h3>
 </div>
 
 <?php

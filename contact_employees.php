@@ -9,26 +9,26 @@ include('functions.php');
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="css/contact.css">
     <title>Medarbejdere</title>
   </head>
   <body>
 
-    <a href="contact_customers.php"><button type="button" name="button">Customers</button></a>
-    <a href="contact_employees.php"><button type="button" name="button">Employees</button></a>
+    <a class=button href="contact_customers.php"><button type="button" name="button">Customers</button></a>
+    <a class=button href="contact_employees.php"><button type="button" name="button">Employees</button></a>
     <table>
       <tr>
-        <th>Fornavn</th>
-        <th>Efternavn</th>
-        <th>Rolle</th>
-        <th>Email</th>
-        <th>Telefonnummer</th>
-        <th>Adresse</th>
-        <th>Postnummer</th>
-        <th>By</th>
+        <th>Fornavn<hr></th>
+        <th>Efternavn<hr></th>
+        <th>Rolle<hr></th>
+        <th>Email<hr></th>
+        <th>Telefonnummer<hr></th>
+        <th>Adresse<hr></th>
+        <th>Postnummer<hr></th>
+        <th>By<hr></th>
       </tr>
       <?php employee_data() ?>
-
+    </table>
   </body>
 </html>
 <!--SELECT employees.employee_first_name, employees.employee_last_name, roles.role, employees.employee_email, employees.employee_phone_no, employees.employee_address, zip_codes.zip_code, zip_codes.city

@@ -1,3 +1,6 @@
+html {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
 .header {
   overflow: hidden;
   background-color: #ebd234;
@@ -5,7 +8,6 @@
 }
 
 .header a {
-
   color: black;
   text-align: center;
   padding: 15px;
@@ -21,14 +23,9 @@
 }
 
 .header a:hover {
-  background-color: #ddd;
-  color: black
+  background-color: #F2F3F4;
 }
 
-.header a.active {
-  background-color;
-  color: black;
-}
 .header-right {
   float: right;
 }
@@ -39,7 +36,7 @@
     display: block;
     text-align:left;
   }
-  .header-right {
-    float: none;
-  }
+
+.header-right {
+  float: none;
 }

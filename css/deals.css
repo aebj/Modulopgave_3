@@ -1,7 +1,16 @@
-table {
-  display: grid;
+html {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+table.deals_table {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 th {
-  padding: 20px;
+  padding: 10px;
+}
+
+option {
+  font-family: "Lucida Console", "Courier New", monospace;
 }
