@@ -79,7 +79,11 @@ function deals_data() {
       <td>". $row["company_name"] ."</td>
       <td>". $row["costumer_contact_first_name"] . " " . $row["costumer_contact_last_name"] ."</td>
       <td>". $row["employee_first_name"] . " " . $row["employee_last_name"] ."</td>
-      <td>". $row["stage"] ."</td>
+      <td>". '<select>
+      <option value=>To do</option>
+      <option value=>Doing</option>
+      <option value=>Done</option>
+      </select>' ."</td>
       <td>". $row["priority"] ."</td>
       <td>". $row["expected_due_date"] ."</td>
       <td>". $row["deadline"] ."</td>
@@ -90,6 +94,20 @@ function deals_data() {
   else {
     echo "0 result";
   }
+}
+
+function stage_dropdown() {
+  global $conn;
+  $sql = "SELECT id, stage FROM stages";
+  $result = mysqli_query($conn, $sql);
+  $stages = [];
+
+  if (mysqli_num_rows($result) > 0) {
+    while ($row = mysqli_fetch_assoc($result)) {
+      $stages[] = $row;
+    }
+  }
+  return $stages;
 }
 
 function message_data() {
