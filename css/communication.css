@@ -1,3 +1,40 @@
 html {
   font-family: "Lucida Console", "Courier New", monospace;
+  background-color: #23272a;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+input.input_text {
+  position: sticky;
+  min-width: 40%;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  border: 0px;
+}
+
+button.submit_button {
+
+  height: 30px;
+  color: black;
+  font-family: "Lucida Console", "Courier New", monospace;
+  border-radius: 8px;
+  border: 0px;
+  background-color: white;
+  margin-top: 10px;
+  min-width: 40%;
+
+}
+
+form.insert {
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+
 }

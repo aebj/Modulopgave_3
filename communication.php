@@ -24,10 +24,10 @@ include('functions.php');
         <th>Beskeder</th>
         </tr>
         <?php message_data();  ?>
-        <form class="" action="insert.php" method="post">
-          <input type="text" name="message" value="">
-          <button type="submit" name="message_button">Send</button>
-      </form>
+        <form class="insert" action="insert.php" method="post">
+          <input class="input_text" type="text" name="message" value="">
+        </form>
+          <button class="submit_button" type="submit" name="message_button">Send</button>
     </table>
   </body>
 </html>

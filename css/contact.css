@@ -1,18 +1,24 @@
 html {
   font-family: "Lucida Console", "Courier New", monospace;
+  background-color: #23272a;
 }
 
 table {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  color: white;
 }
 
 button {
   margin-left: auto;
   margin-right: auto;
-  border-radius: 1px solid;
+  border-radius: 5px;
+  border: 0px;
+  background-color: white;
   font-family: "Lucida Console", "Courier New", monospace;
+  color: black;
+
 }
 
 th {
