@@ -1,13 +1,13 @@
 html {
   font-family: "Lucida Console", "Courier New", monospace;
 }
-.header {
+.navbar {
   overflow: hidden;
   background-color: #ebd234;
   padding: 20px 10px;
 }
 
-.header a {
+.navbar a {
   color: black;
   text-align: center;
   padding: 15px;
@@ -17,26 +17,26 @@ html {
   border-radius: 5px;
 }
 
-.header a.logo {
+.navbar a.logo {
   font-size: 25px;
   font weight: bold;
 }
 
-.header a:hover {
+.navbar a:hover {
   background-color: #F2F3F4;
 }
 
-.header-right {
+.navbar-right {
   float: right;
 }
 
 @media screen and (max-width: 500px) {
-  .header a {
+  .navbar a {
     float: none;
     display: block;
     text-align:left;
   }
 
-.header-right {
+.navbar-right {
   float: none;
 }
