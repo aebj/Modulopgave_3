@@ -19,15 +19,20 @@ include('functions.php');
     <title>Beskeder</title>
   </head>
   <body>
-    <table>
-      <tr>
-        <th>Beskeder</th>
+    <div class="table_wrap">
+      <table>
+        <tr>
+          <th>Beskeder</th>
         </tr>
         <?php message_data();  ?>
+          </table>
+
         <form class="insert" action="insert.php" method="post">
           <input class="input_text" type="text" name="message" value="">
-        </form>
           <button class="submit_button" type="submit" name="message_button">Send</button>
-    </table>
+            </form>
+
+
+      </div>
   </body>
 </html>
